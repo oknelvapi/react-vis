@@ -117,6 +117,7 @@ function Sankey(props) {
         className={getCombinedClassName(className, 'rv-sankey__node')}
         data={nodesCopy.map(node => ({
           ...node,
+          id: node.nodeId
           y: node.y1 - marginTop,
           y0: node.y0 - marginTop,
           x: node.x1,
