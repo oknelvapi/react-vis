@@ -53,7 +53,7 @@ class RectSeries extends AbstractSeries {
       valuePosAttr,
       valueSizeAttr
     } = this.props;
-
+    console.log(data);
     if (!data) {
       return null;
     }
@@ -99,7 +99,7 @@ class RectSeries extends AbstractSeries {
             onMouseOut: e => this._valueMouseOutHandler(d, e),
             key: i
           };
-          return <rect {...attrs} />;
+          return <rect id={d.id} {...attrs} />;
         })}
       </g>
     );
