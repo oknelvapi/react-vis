@@ -67,7 +67,7 @@ var RectSeries = function (_AbstractSeries) {
           valuePosAttr = _props.valuePosAttr,
           valueSizeAttr = _props.valueSizeAttr;
 
-
+      console.log(data);
       if (!data) {
         return null;
       }
@@ -112,7 +112,7 @@ var RectSeries = function (_AbstractSeries) {
           }), _defineProperty(_attrs, 'onMouseOut', function onMouseOut(e) {
             return _this2._valueMouseOutHandler(d, e);
           }), _defineProperty(_attrs, 'key', i), _attrs);
-          return React.createElement('rect', attrs);
+          return React.createElement('rect', _extends({ id: d.id }, attrs));
         })
       );
     }

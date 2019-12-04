@@ -138,11 +138,11 @@ function Sankey(props) {
       className: (0, _stylingUtils.getCombinedClassName)(className, 'rv-sankey__node'),
       data: nodesCopy.map(function (node) {
         return _extends({}, node, {
+          id: node.nodeId,
           y: node.y1 - marginTop,
           y0: node.y0 - marginTop,
           x: node.x1,
           x0: node.x0,
-          id: node.nodeId,
           color: node.color || _theme.DISCRETE_COLOR_RANGE[0],
           sourceLinks: null,
           targetLinks: null

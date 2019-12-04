@@ -53,7 +53,6 @@ class RectSeries extends AbstractSeries {
       valuePosAttr,
       valueSizeAttr
     } = this.props;
-    console.log(data);
     if (!data) {
       return null;
     }
