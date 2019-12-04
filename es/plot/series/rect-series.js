@@ -67,7 +67,6 @@ var RectSeries = function (_AbstractSeries) {
           valuePosAttr = _props.valuePosAttr,
           valueSizeAttr = _props.valueSizeAttr;
 
-      console.log(data);
       if (!data) {
         return null;
       }
